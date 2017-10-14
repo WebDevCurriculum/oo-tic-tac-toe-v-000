@@ -108,4 +108,23 @@ class TicTacToe
       @board[combo[0]]
     end
   end
+
+  def play(board)
+=begin
+must allow players to take turns, checking if the game is over after every turn,
+and at the conclusion of the game, whether because it was won or because
+it was a draw, reporting to the user the outcome of the game
+- let either X or an O enter input
+- check if the game is tied or won after every turn
+- let user know the outcome of the game
+=end
+    until over?(board)
+      turn(board)
+    end
+    if winner(board)
+      puts "Congratulations #{winner(board)}!"
+    elsif draw?(board)
+      puts "Cat's Game!"
+    end
+  end
 end
