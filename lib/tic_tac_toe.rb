@@ -121,11 +121,11 @@ it was a draw, reporting to the user the outcome of the game
     until over?
       turn
     end
-    if winner(board)
-      puts "Congratulations #{winner(board)}!"
+    if winner
+      puts "Congratulations #{winner}!"
     elsif draw?(board)
       puts "Cat's Game!"
     end
   end
-  
+
 end
