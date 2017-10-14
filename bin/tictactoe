@@ -2,6 +2,8 @@
 require 'pry'
 require_relative '../lib/tic_tac_toe.rb'
 
-#welcome player 
+#welcome player
 
 #display board
+
+#method for play game
