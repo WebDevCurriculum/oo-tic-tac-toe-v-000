@@ -109,7 +109,7 @@ class TicTacToe
     end
   end
 
-  def play(board)
+  def play
 =begin
 must allow players to take turns, checking if the game is over after every turn,
 and at the conclusion of the game, whether because it was won or because
@@ -118,8 +118,8 @@ it was a draw, reporting to the user the outcome of the game
 - check if the game is tied or won after every turn
 - let user know the outcome of the game
 =end
-    until over?(board)
-      turn(board)
+    until over?
+      turn
     end
     if winner(board)
       puts "Congratulations #{winner(board)}!"
@@ -127,4 +127,5 @@ it was a draw, reporting to the user the outcome of the game
       puts "Cat's Game!"
     end
   end
+  
 end
