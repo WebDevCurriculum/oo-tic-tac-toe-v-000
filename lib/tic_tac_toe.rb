@@ -123,7 +123,7 @@ it was a draw, reporting to the user the outcome of the game
     end
     if winner
       puts "Congratulations #{winner}!"
-    elsif draw?(board)
+    elsif draw?
       puts "Cat's Game!"
     end
   end
